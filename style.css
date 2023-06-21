@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+    --White: #fff;
+    --Blue: #317ae1;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h3, h3{
+
+}
+
+button{
+    outline: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: inherit;
+    transition: .3s;
+}
+
+.primary-btn{
+    padding: 1rem 4rem;
+    border-radius: 30px;
+    color: var(--Pink);
+    border: 1px solid var(--Pink);
+}
+
+.primary-btn:hover{
+    color: var(--Light-Pink);
+    border-color: var(--Light-Pink);
+}
+
+.secondary-btn{
+    color: var(--White);
+    background: var(--Pink);
+    padding: 1.1rem 5rem;
+    border-radius: 30px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.secondary-btn:hover{
+    background: var(--Light-Pink);
+}
+
+.section{
+    padding-inline: 5%;
+}
+
+.section h1,
+.section h2,
+.section h3{
+    color: var(--Very-Dark-Cyan);
+}
+
+p{
+    color: var(--Very-Dark-Cyan);
+}
+
+/* ==============================NAVBAR SECTION========================= */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3rem;
+    margin-bottom: 15rem;
+}
+
+/* ==============================HERO SECTION========================= */
+.hero{
+    text-align: center;
+}
+
+.title{
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.info{
+    width: 500px;
+    margin-inline: auto;
+    margin-bottom: 3rem;
+}
+
+/* ==========================DEVICE SECTION======================= */
+.device{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+
+/* ==============================FOLLOWERS SECTION========================= */
+.followers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 10rem;
+    gap: 20rem;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fw-title{
+    font-size: 6rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fw-text{
+    font-size: 1.4rem;
+    opacity: .5;
+}
+
+
+/* ============================================ACTIVITY SECTION======================== */
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 13rem;
+    padding-block: 10rem;
+    padding-inline: 5%;
+}
+
+.img-box{
+    width: 100%;
+}
+
+.act-img{
+    width: 100%;
+}
+
+.act-title{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.grow{
+    background-image: url(images/bg-section-top-desktop-1.svg), url(images/bg-section-bottom-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0, 100% 100%;
+}
+
+.users{
+    background-image: url(images/bg-section-top-desktop-2.svg), url(images/bg-section-bottom-desktop-2.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0, 100% 100%;
+}
+
+.convo{
+    padding-block: 3rem;
+}
+
+.bg{
+    position: relative;
+}
+
+.bg::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 8rem;
+    top: 8.5rem;
+    width: 100%;
+    background: var(--Very-Pale-Blue);
+    z-index: -1;
+}
+
+
+/* ===============================BUILD SECTION============================ */
+.build{
+    text-align: center;
+    margin-block: 10rem;
+}
+
+.build button{
+    margin-top: 2rem;
+}
+
+
+/* ===============================FOOTER SECTION============================ */
+.footer{
+    display: flex;
+    align-items: flex-start;
+    gap: 28rem;
+    background-image: url(images/bg-footer-top-desktop.svg);
+    background-repeat: no-repeat;
+    padding-block: 10rem 5rem;
+    position: relative;
+}
+
+.footer::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 9.5rem;
+    width: 100%;
+    background: var(--Very-Dark-Cyan);
+    z-index: -1;
+}
+
+.footer p,
+.footer h3{
+    color: var(--White);
+}
+
+.footer-text{
+    width: 380px;
+    line-height: 25px;
+}
+
+.left,
+.right{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-logo{
+    filter: brightness(0) invert(1);
+    width: 250px;
+}
+
+.contact-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.fa-brands{
+    color: var(--White);
+    font-size: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.fa-brands:hover{
+    color: var(--Blue);
+}
+
+.nl-title{
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.input{
+    border: 0;
+    outline: 0;
+    border-radius: .2rem;
+    padding: .7rem 1.5rem;
+    width: 100%;
+}
+
+.nl-btn{
+    border-radius: .2rem;
+    padding: .7rem 1.5rem;
+}
+
+.nl-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+}
+
+
+/* ==================RESPONSIVE FOR SMALL DEVICE=================================== */
+@media(max-width: 600px){
+
+    .navbar{
+        margin-bottom: 8rem;
+    }
+
+    .logo{
+        width: 100px;
+    }
+
+    .primary-btn{
+        padding: .5rem 1.5rem;
+        font-size: .8rem;
+    }
+
+    .title{
+        font-size: 1.8rem;
+    }
+
+    .device{
+        margin-top: 7rem;
+    }
+
+    .device-img{
+        width: 100%;
+    }
+
+    .followers{
+        flex-direction: column;
+        margin-block: 5rem;
+        gap: 7rem;
+    }
+
+    .fw-title{
+        font-size: 4.5rem;
+    }
+    
+    .fw-text{
+        font-size: 1rem;
+    }
+    
+
+    .info{
+        width: 100%;
+    }
+
+    .row{
+        flex-direction: column;
+        text-align: center;
+        gap: 5rem;
+    }
+
+    .grow,
+    .users{
+        flex-direction: column-reverse;
+    }
+
+    .grow{
+        background-image: url(images/bg-section-top-mobile-1.svg), url(images/bg-section-bottom-mobile-1.svg);
+
+    }
+    
+    .users{
+        background-image: url(images/bg-section-top-mobile-2.svg), url(images/bg-section-bottom-mobile-2.svg);
+    }
+
+    .bg::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 3rem;
+        top: 6rem;
+    }
+    
+
+    .users.bg::after{
+        bottom: 6rem;
+    }
+
+    .act-title{
+        font-size: 1.5rem;
+    }
+
+    .build{
+        margin-block: 5rem;
+    }
+
+    .build .secondary-btn{
+        width: 60%;
+        padding: 1rem 1rem;
+    }
+
+    .footer{
+        background-image: url(images/bg-footer-top-mobile.svg);
+        background-size: contain;
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+
+    .footer::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 3rem;
+        z-index: -1;
+    }
+
+    .right{
+        margin-top: 3rem;
+    }
+
+    .footer-text{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .nl-form{
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-end;
+        gap: 1rem;
+    }
+
+    .left{
+        margin-top: 3rem;
+    }
+}
